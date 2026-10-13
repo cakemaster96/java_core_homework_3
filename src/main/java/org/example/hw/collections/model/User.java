@@ -1,13 +1,17 @@
 package org.example.hw.collections.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.extern.jackson.Jacksonized;
 
 import java.time.LocalDate;
 import java.util.Objects;
 
 @Builder
 @Data
+@Jacksonized
+
 public class User {
     private final Long id;
     private final String name;
